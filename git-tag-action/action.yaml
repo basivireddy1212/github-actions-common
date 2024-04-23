@@ -20,7 +20,8 @@ runs:
           echo "hi"
           pwd
           ls -la
-          ls -la .github
+          ls -la .github/workflows
+          ls -la .github/workflows/actions
           ls -la .git
       
     - run: bash ./git-tag-action/git-tagging.sh
