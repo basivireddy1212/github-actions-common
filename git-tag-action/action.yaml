@@ -1,6 +1,10 @@
 name: 'Git Tag Action'
 description: 'Add a git tag to the current workflow commit'
 author: 'basivireddy'
+inputs:
+  build_tag:
+     type: string
+     descrption: build tag
 runs:
   using: "composite"
   steps:
@@ -19,6 +23,8 @@ runs:
       run: |
           echo "hi"
           pwd
+          build_tag=${{ inputs.build_tag }}
+          echo "input build tag ${build_tag}"
           ls -la
           ls -la .github/workflows
           ls -la .github/workflows/actions
