@@ -1,6 +1,7 @@
 #!/bin/bash
 set -x
 
+echo "from basivireddy/github-actions-common/edit/main/git-tag-action "
 # input validation
 if [[ -z "${TAG}" ]]; then
    echo "No tag name supplied"
