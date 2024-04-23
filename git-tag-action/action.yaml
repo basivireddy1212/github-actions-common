@@ -15,6 +15,7 @@ runs:
       shell: bash
     
     - name: print output
+      shell: bash
       run: |
           echo "hi"
           pwd
