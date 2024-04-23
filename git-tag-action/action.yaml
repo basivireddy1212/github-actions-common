@@ -24,6 +24,6 @@ runs:
           ls -la .github/workflows/actions
           ls -la .git
       
-    - run: bash ./git-tag-action/git-tagging.sh
+    - run: bash git-tagging.sh
       shell: bash
       
