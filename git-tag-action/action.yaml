@@ -5,7 +5,7 @@ runs:
   using: "composite"
   steps:
     - name: Run a one-line script
-      run: echo Hello, world!
+      run: echo Hello, world! from basivireddy/github-actions-common
       shell: bash
 
     - id: random-number-generator
