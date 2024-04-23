@@ -25,10 +25,10 @@ runs:
           pwd
           build_tag=${{ inputs.build_tag }}
           echo "input build tag ${build_tag}"
-          ls -la
-          ls -la .github/workflows
-          ls -la .github/workflows/actions
-          ls -la .git
+          #ls -la
+         # ls -la .github/workflows
+          #ls -la .github/workflows/actions
+          #ls -la .git
       
     - run: bash git-tagging.sh
       shell: bash
