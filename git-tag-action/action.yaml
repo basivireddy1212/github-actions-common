@@ -5,6 +5,12 @@ inputs:
   build_tag:
      type: string
      descrption: build tag
+    MESSAGE:
+     type: string
+     descrption: build tag
+    HEADER:
+     type: string
+     descrption: build tag
 runs:
   using: "composite"
   steps:
@@ -25,6 +31,9 @@ runs:
           pwd
           build_tag=${{ inputs.build_tag }}
           echo "input build tag ${build_tag}"
+          message=${{ inputs.MESSAGE }}
+          header=${{ inputs.HEADER }}
+          echo "${message} ${header}"
           #ls -la
          # ls -la .github/workflows
           #ls -la .github/workflows/actions
