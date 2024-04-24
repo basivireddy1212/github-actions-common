@@ -28,10 +28,10 @@ runs:
       shell: bash
       run: |
           echo "hi"
+          echo -e "${{ inputs.MESSAGE }}"
           pwd
           build_tag=${{ inputs.build_tag }}
           echo "input build tag ${build_tag}"
-          echo -e "${{ inputs.MESSAGE }}"
           echo -e "${{ inputs.HEADER }}"
 
       
