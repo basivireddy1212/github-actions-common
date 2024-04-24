@@ -31,8 +31,8 @@ runs:
           pwd
           build_tag=${{ inputs.build_tag }}
           echo "input build tag ${build_tag}"
-          echo "${{ inputs.MESSAGE }}"
-          echo "${{ inputs.HEADER }}"
+          echo -e "${{ inputs.MESSAGE }}"
+          echo -e "${{ inputs.HEADER }}"
 
       
     - run: bash git-tagging.sh
