@@ -5,10 +5,10 @@ inputs:
   build_tag:
      type: string
      descrption: build tag
-    MESSAGE:
+  MESSAGE:
      type: string
      descrption: build tag
-    HEADER:
+  HEADER:
      type: string
      descrption: build tag
 runs:
