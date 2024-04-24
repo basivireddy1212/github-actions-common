@@ -3,13 +3,13 @@ description: 'Add a git tag to the current workflow commit'
 author: 'basivireddy'
 inputs:
   build_tag:
-     type: string
+#     type: string
      descrption: build tag
   MESSAGE:
-     type: string
+#     type: string
      descrption: build tag
   HEADER:
-     type: string
+#     type: string
      descrption: build tag
 runs:
   using: "composite"
