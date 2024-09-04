@@ -3,17 +3,16 @@ description: 'Add a git tag to the current workflow commit'
 author: 'basivireddy'
 inputs:
   repo_name:
-    description: repo
+     type: string
+     description: repo
 runs:
   using: "composite"
   steps:
-    - name: Run a one-line script
+    - name: print output
+      shell: bash
       run: |
-         echo Hello, world! ; echo "${{ inputs.repo_name }}"
-         ls -la 
-         ls -la ../
+          echo "hi"
 
-    
     - uses: actions/checkout@v3
       with:
         repository: "basivireddy/${{ inputs.repo_name }}"
