@@ -12,11 +12,18 @@ runs:
       shell: bash
       run: |
           echo "hi"
+          ls -la
 
     - uses: actions/checkout@v3
       with:
         repository: "basivireddy/${{ inputs.repo_name }}"
         path: "${{ inputs.repo_name }}"
+
+    - name: print output
+      shell: bash
+      run: |
+          echo "hi"
+          ls -la
 
     - run: bash s-b.sh "${{ inputs.repo_name }}"
       shell: bash
