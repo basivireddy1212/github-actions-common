@@ -1,6 +1,6 @@
 name: 'Git Tag Action'
 description: 'Add a git tag to the current workflow commit'
-author: 'basivireddy'
+author: 'author-name'
 inputs:
   build_tag:
      type: string
